@@ -1,0 +1,29 @@
+$color-bg: #161926;
+$color-accent: #178ddb;
+$font-title: 'Playfair Display', serif;
+$font-body: 'Lato', sans-serif;
+
+$main-font-color: #ffffff;
+$color-white: #ffffff;
+$color-muted: #888888;
+$color-underline: #53F3CD;
+$color-border: #515773;
+$font-size-main: 16px;
+
+$width_container: 1170px;
+$adaptive_width_container: calc($width_container / 2);
+
+
+
+
+
+:root {
+  --main-background:  #161926;
+  --main-img: url('../assets/img/first-screen-image.png');
+  --nav-underline: linear-gradient(90deg, #53f3cea4, #53f3ce2d 80%) ;
+  --text-color: #ffffff;
+  --italic-text-color: #5b8df6;
+  --btn-color: #53F3CD;
+  --rgb-back: rgba(15, 20, 36, 0.8);
+  --color-border: rgba(81, 87, 115, 1)
+}
