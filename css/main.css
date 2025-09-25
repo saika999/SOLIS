@@ -768,9 +768,42 @@ body {
   color: var(--italic-text-color);
 }
 
+.burger {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .burger:checked ~ .menu {
+    right: 0;
+  }
+}
+.burger__img {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .burger__img {
+    display: inline-block;
+    position: relative;
+    top: -24px;
+    width: 34px;
+    height: 2px;
+    background-color: #f5eded;
+    vertical-align: middle;
+  }
+  .burger__img::after, .burger__img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f5eded;
+    top: 10px;
+  }
+  .burger__img::before {
+    top: -10px;
+  }
+}
+
 @media (max-width: 1000px) {
   .header {
-    flex-direction: column;
     gap: 20px;
     align-items: flex-start;
     position: static;
@@ -779,7 +812,18 @@ body {
   }
   .menu {
     flex-direction: column;
-    gap: 15px;
+    gap: 0;
+    background: #527089;
+  }
+  .menu__item {
+    text-align: center;
+    padding: 10px 50px;
+    border: 1px solid #ffddff;
+  }
+  .nav {
+    position: absolute;
+    right: 0;
+    top: 47px;
   }
   .hero__inner {
     grid-template-columns: 1fr;
@@ -818,5 +862,53 @@ body {
   .footer__left,
   .footer__form {
     flex: 1 1 100%;
+  }
+}
+@media (max-width: 768px) {
+  .banner {
+    padding-top: 20px;
+  }
+  .hero__content {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero__stat {
+    margin-bottom: 20px;
+  }
+  .hero__stats .hero__stat h3 {
+    font-size: 53px;
+  }
+  .hero__description p {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .hero__image-wrapper img.hero__image {
+    max-height: 340px;
+  }
+  .swap-section__item {
+    margin-bottom: -16px;
+  }
+  .reviews__list {
+    max-width: 388px;
+    margin: 10px auto;
+  }
+  .swap-section__photo {
+    display: none;
+  }
+  .quote__text {
+    font-size: 24px;
+  }
+  .quote__wrapper {
+    padding: 70px 0 70px 50px;
+  }
+  .title_1 {
+    font-size: 2.45rem;
+  }
+  .title_2 {
+    font-size: 1.9rem;
+  }
+  .swap-section {
+    padding: 40px 0;
   }
 }/*# sourceMappingURL=main.css.map */
